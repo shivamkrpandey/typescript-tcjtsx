@@ -17,9 +17,7 @@ const date = utcToZonedTime("2020-12-17T00:00:00.000Z", "America/Los_Angeles", {
   timeZone: "America/Los_Angeles"
 });
 
-const newDa = format(date, "yyyy-MM-dd HH:mm:ss zzz", {
-  timeZone: "America/Los_Angeles"
-});
+const newDa = format(date, "MM/dd/yyyy hh:mm:ss a");
 // const date1 = moment(new Date()).isSame(new Date(), `date`);
 // const date2 = isSameDay(
 //   new Date("2020-12-17T00:00:00.000Z"),
@@ -30,4 +28,4 @@ const newDa = format(date, "yyyy-MM-dd HH:mm:ss zzz", {
 // format(date, 'yyyy-MM-dd HH:mm:ss', { timeZone: 'America/Los_Angeles' });
 
 // let getDate1 = getDate(new Date());
-appDiv.innerHTML = `<h1>Date: ${resultDate}</h1> <h1>new Date: ${newDa}</h1>`;
+appDiv.innerHTML = `<h1> <h1>new Date: ${newDa.toString()}</h1>`;
